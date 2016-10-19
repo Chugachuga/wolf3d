@@ -6,7 +6,7 @@
 /*   By: gvilmont <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/17 15:10:27 by gvilmont          #+#    #+#             */
-/*   Updated: 2016/10/17 15:22:02 by gvilmont         ###   ########.fr       */
+/*   Updated: 2016/10/19 15:48:13 by gvilmont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,12 @@ int		ft_core(t_z *z)
 	ft_init_var(z);
 	ft_do(z);
 	return (1);
+}
+
+int		ft_exitcross(t_z *z)
+{
+	free(z);
+	exit(0);
 }
 
 void	ft_frametime(t_z *z)

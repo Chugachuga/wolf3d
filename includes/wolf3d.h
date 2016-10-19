@@ -6,7 +6,7 @@
 /*   By: gvilmont <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/31 15:27:00 by gvilmont          #+#    #+#             */
-/*   Updated: 2016/10/17 14:11:53 by gvilmont         ###   ########.fr       */
+/*   Updated: 2016/10/19 15:48:27 by gvilmont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,7 @@ typedef struct	s_z
 	char		*line;
 }				t_z;
 
+int				ft_exitcross(t_z *z);
 void			ft_frametime(t_z *z);
 int				ft_core(t_z *z);
 int				ft_keyhook(int keycode, t_z *z);
@@ -86,7 +87,7 @@ void			ft_exit(t_z *z);
 void			ft_wall(t_z *z);
 int				ft_do(t_z *z);
 int				ft_putintab(t_z *z);
-void			put_pixel_to_image(int x, int y, int color, t_z *z);
+void			put_pixel_to_image(t_z *z, int x, int y, int color);
 void			ft_height(t_z *z);
 void			ft_dda(t_z *z);
 void			ft_step(t_z *z);

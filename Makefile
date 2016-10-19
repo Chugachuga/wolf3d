@@ -6,7 +6,7 @@
 #    By: jgeslin  <jgeslin@student.42.fr>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/01/15 12:36:55 by jgeslin           #+#    #+#              #
-#    Updated: 2016/10/17 15:48:54 by gvilmont         ###   ########.fr        #
+#    Updated: 2016/10/19 15:24:14 by gvilmont         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,14 +29,17 @@ FLAGMLX = -lmlx -framework Opengl -framework AppKit
 all: $(NAME)
 
 $(NAME):$(OBJ)
+			make -C ./libft/
 			gcc $(FLAG) -o $(NAME) $(FLAGMLX) $(GNL) $(SRC) $(LIBS) -I.
 
 clean:
+			make clean -C ./libft/
 			/bin/rm -f $(OBJ)
 
 fclean: clean
+		make fclean -C ./libft/
 		/bin/rm -f $(NAME)
 
-re:fclean all	
+re:fclean all
 
 .PHONY: clean fclean re all

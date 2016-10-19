@@ -6,7 +6,7 @@
 /*   By: gvilmont <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/21 14:11:24 by gvilmont          #+#    #+#             */
-/*   Updated: 2016/10/17 15:27:58 by gvilmont         ###   ########.fr       */
+/*   Updated: 2016/10/19 15:49:46 by gvilmont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ int		main(void)
 		ft_do(z);
 		mlx_hook(z->win, 2, 1, ft_keyhook, z);
 		mlx_loop_hook(z->mlx, ft_core, z);
+		mlx_hook(z->win, 17, 1, ft_exitcross, z);
 		mlx_loop(z->mlx);
 	}
 	return (0);
