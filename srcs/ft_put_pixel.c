@@ -6,7 +6,7 @@
 /*   By: gvilmont <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/31 16:24:27 by gvilmont          #+#    #+#             */
-/*   Updated: 2016/10/19 14:49:27 by gvilmont         ###   ########.fr       */
+/*   Updated: 2016/10/23 17:00:24 by gvilmont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	put_pixel_to_image(t_z *z, int x, int y, int color)
 void	ft_init_var(t_z *z)
 {
 	z->x = 0;
-	z->w = WIN_X;
+	z->w = z->WIN_X;
 	z->mapwidth = 24;
 	z->mapheight = 24;
 }

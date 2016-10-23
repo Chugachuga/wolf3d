@@ -6,7 +6,7 @@
 /*   By: gvilmont <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/27 14:00:03 by gvilmont          #+#    #+#             */
-/*   Updated: 2016/10/19 14:50:37 by gvilmont         ###   ########.fr       */
+/*   Updated: 2016/10/23 16:59:50 by gvilmont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ void	ft_draw(t_z *z)
 
 int		ft_do(t_z *z)
 {
-	z->img = mlx_new_image(z->mlx, WIN_X, WIN_Y);
+	z->img = mlx_new_image(z->mlx, z->WIN_X, z->WIN_Y);
 	z->img_data = mlx_get_data_addr(z->img, &(z->bpp), &(z->s_line),
 				&(z->ed));
 	ft_init(z);

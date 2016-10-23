@@ -6,7 +6,7 @@
 /*   By: gvilmont <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/17 19:32:38 by gvilmont          #+#    #+#             */
-/*   Updated: 2016/10/17 15:40:47 by gvilmont         ###   ########.fr       */
+/*   Updated: 2016/10/23 17:00:06 by gvilmont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,7 @@ void	ft_wall(t_z *z)
 
 void	ft_height(t_z *z)
 {
-	z->h = WIN_Y;
+	z->h = z->WIN_Y;
 	z->lineheight = (int)(z->h / z->perpwalldist);
 	z->drawstart = -z->lineheight / 2 + z->h / 2;
 	if (z->drawstart < 0)

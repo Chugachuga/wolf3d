@@ -6,7 +6,7 @@
 /*   By: gvilmont <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/31 15:27:00 by gvilmont          #+#    #+#             */
-/*   Updated: 2016/10/19 15:48:27 by gvilmont         ###   ########.fr       */
+/*   Updated: 2016/10/23 17:29:15 by gvilmont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,11 @@
 # include <fcntl.h>
 # include <math.h>
 
-# define WIN_X 1200
-# define WIN_Y 700
-
 typedef struct	s_z
 {
+	int			a;
+	int			WIN_X;
+	int			WIN_Y;
 	int			lineheight;
 	int			h;
 	int			drawstart;

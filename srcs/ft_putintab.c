@@ -6,7 +6,7 @@
 /*   By: gvilmont <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/17 19:59:39 by gvilmont          #+#    #+#             */
-/*   Updated: 2016/10/17 15:43:14 by gvilmont         ###   ########.fr       */
+/*   Updated: 2016/10/23 17:29:12 by gvilmont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,18 +32,16 @@ void		ft_tabatoi(t_z *z)
 
 void		ft_inittab(t_z *z)
 {
-	int		a;
-
-	a = 0;
+	z->a = 0;
 	z->new1 = (int**)malloc(sizeof(int*) * 25);
 	if (!z->new1)
 		return ;
-	while (a < 24)
+	while (z->a < 24)
 	{
-		z->new1[a] = (int*)malloc(sizeof(int) * 25);
-		if (!z->new1[a])
+		z->new1[z->a] = (int*)malloc(sizeof(int) * 25);
+		if (!z->new1[z->a])
 			return ;
-		a++;
+		z->a++;
 	}
 }
 
